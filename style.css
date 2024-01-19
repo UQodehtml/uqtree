@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    /* background-color: wheat; */
+    background: linear-gradient(to right, #FA1F33, #FFB705);
+    /* background-repeat: no-repeat; */
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.content{
+    width: 800px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+}
+.header h3{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/*  */
+.menu{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-btn{
+    width: 700px;
+    background-color: white;
+    border-radius: 40px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    box-shadow: 4.5px 3px 6.5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s ease-in-out;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.menu-btn:hover{
+    box-shadow:  5px 5px 7px rgba(0, 0, 0, 0.9);
+    color: black;
+}
+
+/* Sosmed */
+.sosmed{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.fa-brands, .fa-solid{
+    font-size: 35px;
+    margin: 20px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white
+}
+.sosmed a:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+.fa-instagram:hover{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    border-radius: 11.5px;
+    padding: 5px 7px;
+    box-sizing: border-box;
+    }
+.fa-facebook-f:hover{
+    background-color: #1877F2;
+    border-radius: 11.5px;
+    padding: 5px 10.5px;
+    box-sizing: border-box;
+}
+.fa-spotify:hover{
+    color: #1DB954;
+    background-color: #191414;
+    border-radius: 11.5px;
+    padding: 5px 6px;
+    box-sizing: border-box;
+}
+.fa-linkedin-in:hover{
+    color: white;
+    background-color: #1666C5;
+    border-radius: 11.5px;
+    padding: 5px 7px;
+}
+.fa-discord:hover{
+    background-color: #5865F2;
+    border-radius: 15px;
+    padding: 5px 7px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px){
+    *{
+        font-family: 'Roboto', sans-serif;
+    }
+    body{
+        background: linear-gradient(to right, #FA1F33, #FFB705);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 320px;
+    }
+    .content{
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header img{
+        width: 170px;
+        height: 170px;
+        border-radius: 50%; 
+    }
+    .header h3{
+        font-size: 17px;
+        letter-spacing: 1.5px;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    /* Menu Item */
+    .menu{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-btn{
+        max-width: 320px;
+        background-color: white;
+        border-radius: 40px;
+        padding: 12.5px;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        box-shadow: 6.5px 4px 5.5px rgba(0, 0, 0, 0.9);
+        transition: box-shadow 0.2s ease-in-out;
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+    .menu-btn:hover{
+        box-shadow:  5px 5px 7px rgba(0, 0, 0, 0.9);
+    }
+    
+    /* Sosmed */
+    .sosmed{
+        /* margin-top: 10px; */
+        display: flex;
+        justify-content: space-around;
+    }
+    .fa-brands, .fa-solid{
+        font-size: 25px;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        text-decoration: none;
+        color: white
+    }
+    .sosmed a:hover{
+        transition: 0.2s ease-in-out;
+        transform: scale(1.2);
+    }
+    .fa-instagram:hover{
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        border-radius: 11.5px;
+        padding: 5px 7px;
+        box-sizing: border-box;
+        }
+    .fa-facebook-f:hover{
+        background-color: #1877F2;
+        border-radius: 11.5px;
+        padding: 5px 10.5px;
+        box-sizing: border-box;
+    }
+    .fa-spotify:hover{
+        color: #1DB954;
+        background-color: #191414;
+        border-radius: 11.5px;
+        padding: 5px 6px;
+        box-sizing: border-box;
+    }
+    .fa-linkedin-in:hover{
+        color: white;
+        background-color: #1666C5;
+        border-radius: 11.5px;
+        padding: 5px 7px;
+    }
+    .fa-discord:hover{
+        background-color: #5865F2;
+        border-radius: 15px;
+        padding: 5px 7px;
+    }
+    
+}
